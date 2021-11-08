@@ -7,15 +7,18 @@ const questions = [
 ]
 
 const initialState = {
+  // Object key value shorthand? is something has the same name we can write only the name, so the questions for example 
   questions,
   answers: [],
   currentQuestionIndex: 0,
   quizOver: false
 }
 
+// this is where we create our slice
 export const quiz = createSlice({
   name: 'quiz',
   initialState,
+  // functions to update the store
   reducers: {
 
     /**
